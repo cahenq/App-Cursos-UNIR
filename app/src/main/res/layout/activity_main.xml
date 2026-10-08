@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/tela"
+    android:background="@color/fundo">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/azul"
+                android:padding="14dp">
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/logo_unir"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/branco"
+                    android:contentDescription="@string/logo_unir" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:text="@string/app_name"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/branco" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:src="@drawable/fachada_unir"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/fachada_unir" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conheca_cursos"
+                    android:textSize="22sp"
+                    android:textColor="@color/azul_escuro"
+                    android:textStyle="bold"
+                    android:gravity="start" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orientacao"
+                    android:textSize="14sp"
+                    android:textColor="@color/texto_secundario"
+                    android:gravity="start"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="0dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_campus"
+                            android:importantForAccessibility="no" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/campus"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/azul_escuro"
+                            android:labelFor="@id/spinnerCampus" />
+                    </LinearLayout>
+                    <Spinner
+                        android:id="@+id/spinnerCampus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="4dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="20dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_educacao"
+                            android:importantForAccessibility="no" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/grau"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/azul_escuro" />
+                    </LinearLayout>
+                    <RadioGroup
+                        android:id="@+id/grupoGrau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:checkedButton="@id/radioTodos"
+                        android:layout_marginTop="8dp">
+                        <RadioButton
+                            android:id="@+id/radioTodos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="44dp"
+                            android:text="@string/todos"
+                            android:textSize="15sp"
+                            android:buttonTint="@color/azul" />
+                        <RadioButton
+                            android:id="@+id/radioBacharelado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="44dp"
+                            android:text="@string/bacharelado"
+                            android:textSize="15sp"
+                            android:buttonTint="@color/azul" />
+                        <RadioButton
+                            android:id="@+id/radioLicenciatura"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="44dp"
+                            android:text="@string/licenciatura"
+                            android:textSize="15sp"
+                            android:buttonTint="@color/azul" />
+                    </RadioGroup>
+                    <CheckBox
+                        android:id="@+id/checkNoturno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/somente_noturnos"
+                        android:textSize="15sp"
+                        android:buttonTint="@color/azul"
+                        android:layout_marginTop="12dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnVerCursos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="52dp"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/ver_cursos"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/branco"
+                        app:drawableStartCompat="@drawable/ic_buscar"
+                        app:drawableTint="@color/branco"
+                        android:drawablePadding="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

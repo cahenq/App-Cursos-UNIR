@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cursos UNIR</string>
+    <string name="orientacao">Selecione o campus e o tipo de curso.</string>
+    <string name="campus">Campus</string>
+    <string name="grau">Grau</string>
+    <string name="todos">Todos</string>
+    <string name="bacharelado">Bacharelado</string>
+    <string name="licenciatura">Licenciatura</string>
+    <string name="somente_noturnos">Somente cursos noturnos</string>
+    <string name="ver_cursos">VER CURSOS</string>
+    <string name="cursos_disponiveis">Cursos disponíveis</string>
+    <string name="detalhes_curso">Informações do curso</string>
+    <string name="voltar">Voltar</string>
+    <string name="nenhum_curso">Não foram encontrados cursos com esses filtros. Volte e escolha outras opções.</string>
+    <plurals name="quantidade_cursos">
+        <item quantity="one">%d curso encontrado</item>
+        <item quantity="other">%d cursos encontrados</item>
+    </plurals>
+    <string name="campus_valor">Campus: %1$s</string>
+    <string name="grau_valor">Grau: %1$s</string>
+    <string name="turno_valor">Turno: %1$s</string>
+    <string name="sobre_curso">Sobre o curso</string>
+    <string name="acessar_site">ACESSAR SITE</string>
+    <string name="compartilhar">COMPARTILHAR</string>
+    <string name="compartilhar_curso">Compartilhar curso</string>
+    <string name="dados_ausentes">As informações do curso estão incompletas.</string>
+    <string name="site_ausente">Este curso não tem um site informado.</string>
+    <string name="site_invalido">O endereço do site é inválido.</string>
+    <string name="sem_navegador">Não foi encontrado um aplicativo para abrir o site.</string>
+    <string name="sem_compartilhamento">Não foi possível abrir o compartilhamento.</string>
+    <string name="link_indisponivel">Link indisponível</string>
+    <string name="imagem_curso">Imagem ilustrativa do curso</string>
+    <string name="conheca_cursos">Cursos de graduação</string>
+    <string name="universidade">Universidade Federal de Rondônia</string>
+    <string name="logo_unir">Logo da UNIR</string>
+    <string name="fachada_unir">Fachada da Universidade Federal de Rondônia</string>
+    <string name="filtros_valor">%1$s · %2$s</string>
+    <string name="filtro_noturno"> · Noturno</string>
+</resources>

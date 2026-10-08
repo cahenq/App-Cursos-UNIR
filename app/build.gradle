@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.unir.cursosunir'
+    compileSdk 37
+
+    defaultConfig {
+        applicationId 'com.unir.cursosunir'
+        minSdk 31
+        targetSdk 37
+        versionCode 1
+        versionName '1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.activity:activity:1.10.1'
+    implementation 'androidx.core:core:1.16.0'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+}

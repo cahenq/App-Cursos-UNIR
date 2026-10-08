@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="6dp"
+    android:padding="10dp"
+    android:background="@drawable/fundo_card"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/fundo_foto"
+        android:clipToOutline="true">
+        <ImageView
+            android:id="@+id/imagemCurso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_educacao"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:textColor="@color/azul_escuro"
+            android:id="@+id/txtNome"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtGrau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/azul"
+            android:layout_marginTop="6dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginTop="7dp"
+            app:drawableStartCompat="@drawable/ic_local"
+            android:drawablePadding="4dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_seta"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="6dp" />
+</LinearLayout>
