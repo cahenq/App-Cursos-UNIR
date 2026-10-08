@@ -22,7 +22,7 @@ SDK mínimo: 31 · SDK alvo: 37.
 
 | Tela inicial | Lista de cursos | Detalhes do curso |
 | --- | --- | --- |
-| <img src="imagens/tela_inicial.jpg" alt="Tela inicial com os filtros" width="230"> | <img src="imagens/lista_cursos.jpg" alt="Lista dos cursos encontrados" width="230"> | <img src="imagens/detalhes_curso.jpg" alt="Informações e ações do curso" width="230"> |
+| <img src="app/imagens/tela_inicial.jpg" alt="Tela inicial com os filtros" width="230"> | <img src="app/imagens/lista_cursos.jpg" alt="Lista dos cursos encontrados" width="230"> | <img src="app/imagens/detalhes_curso.jpg" alt="Informações e ações do curso" width="230"> |
 
 ## Como executar
 
