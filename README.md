@@ -4,7 +4,7 @@
 **Disciplina:** Programação à Dispositivos Móveis  
 **Curso:** Ciência da Computação — Universidade Federal de Rondônia (UNIR)
 
-Aplicativo Android para consultar os cursos de graduação da UNIR. O projeto reúne os conteúdos trabalhados na disciplina, como interfaces XML, Activities, Intents, RecyclerView e carregamento de imagens com Glide.
+Aplicativo Android para consultar os cursos de graduação da UNIR. O aplicativo faz parte de uma atividade avaliativa que reúne os conteúdos trabalhados na disciplina, como interfaces XML, Activities, Intents, RecyclerView e carregamento de imagens com Glide.
 
 ## Funcionalidades
 
